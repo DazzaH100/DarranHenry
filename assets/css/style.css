@@ -1,0 +1,39 @@
+/* Add to your styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(45deg, #000000, #434343, #236B8E, #0F9B8E);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.hero-content {
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ... rest of the styles ... */
