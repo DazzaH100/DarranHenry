@@ -36,4 +36,21 @@ body, html {
     100% { background-position: 0% 50%; }
 }
 
+.btn-cta {
+    padding: 10px 25px;
+    background-color: #000000; /* black background */
+    color: #ffffff; /* white text colour */
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* pseudo-element for the arrow or can be added directly to html */
+}
+
+.btn-cta:hover {
+    background-color: #555; /* DARKER BACKGROUND ON HOVER */
+    color: #ddd; /* sligtly lighter text on hover */
+    transform: translateX(5px); /* move button to the right on hover */
+}
+
 /* ... rest of the styles ... */
