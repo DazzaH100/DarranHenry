@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: large;
     font-weight: 700; /* Corresponds to the weight 700 you included in the Google Fonts link */
         /* Other styling properties */
 }
