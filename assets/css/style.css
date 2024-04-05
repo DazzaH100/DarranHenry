@@ -30,27 +30,28 @@ body, html {
     z-index: 10;
 }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 .btn-cta {
     padding: 10px 25px;
-    background-color: #000000; /* black background */
-    color: #ffffff; /* white text colour */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     text-decoration: none;
     font-weight: bold;
     border: none;
     border-radius: 2px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* pseudo-element for the arrow or can be added directly to html */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* You can use a pseudo-element for the arrow or just add it directly in the HTML */
 }
 
 .btn-cta:hover {
-    background-color: #555; /* DARKER BACKGROUND ON HOVER */
-    color: #ddd; /* sligtly lighter text on hover */
-    transform: translateX(5px); /* move button to the right on hover */
+    background-color: #555; /* Darker background on hover */
+    color: #ddd; /* Slightly lighter text on hover */
+    transform: translateX(5px); /* Move button to the right on hover */
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* ... rest of the styles ... */
