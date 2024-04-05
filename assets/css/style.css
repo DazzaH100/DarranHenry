@@ -5,6 +5,12 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Corresponds to the weight 700 you included in the Google Fonts link */
+    /* Other styling properties */
+}
+
 .hero {
     background: linear-gradient(45deg, #000000, #434343, #236B8E, #0F9B8E);
     background-size: 400% 400%;
