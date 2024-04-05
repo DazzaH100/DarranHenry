@@ -1,11 +1,8 @@
-/* Add to your styles.css */
+/* style.css */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 125%;
-    font-weight: 700; /* Corresponds to the weight 700 you included in the Google Fonts link */
-        /* Other styling properties */
 }
 
 .hero {
@@ -30,25 +27,43 @@ body, html {
 .hero-content {
     position: relative;
     color: #ffffff;
+    text-align: left;
+    max-width: 960px;
+    margin: 0 auto;
     z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.highlighted {
+    color: #E60073;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 .btn-cta {
     padding: 10px 25px;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     border: none;
     border-radius: 2px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    /* You can use a pseudo-element for the arrow or just add it directly in the HTML */
 }
 
 .btn-cta:hover {
-    background-color: #555; /* Darker background on hover */
-    color: #ddd; /* Slightly lighter text on hover */
-    transform: translateX(5px); /* Move button to the right on hover */
+    background-color: #555;
+    color: #ddd;
+    transform: translateX(5px);
 }
 
 @keyframes gradientBG {
@@ -57,4 +72,13 @@ body, html {
     100% { background-position: 0% 50%; }
 }
 
-/* ... rest of the styles ... */
+footer {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+/* Responsive and additional styles can be added as needed */
