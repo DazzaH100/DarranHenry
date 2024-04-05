@@ -1,59 +1,49 @@
 /* style.css */
 * {
-    box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
+    box-sizing: border-box;
 }
 
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    width: 100%; /* Ensures the body doesn't extend beyond the viewport */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
-.hero {
-    background: linear-gradient(45deg, #000000, #434343, #236B8E, #0F9B8E);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden; /* Ensures no internal overflow */
+    overflow-x: hidden;
 }
 
 #particles-js {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: none;
+    z-index: -1;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .hero-content {
-    position: relative;
-    color: #ffffff;
-    text-align: left;
-    max-width: 960px;
-    margin: 0 auto;
     z-index: 10;
-    padding: 0 15px; /* Add padding to ensure text doesn't touch the sides */
+    color: #ffffff;
 }
 
 .hero-content h1 {
     font-size: 3rem;
     font-weight: normal;
-    line-height: 1.2;
 }
 
 .highlighted {
     color: #E60073;
-    font-weight: bold;
 }
 
 .hero-content p {
     font-size: 1.5rem;
-    margin-top: 1rem;
 }
 
 .btn-cta {
@@ -64,19 +54,12 @@ body, html {
     font-weight: bold;
     border: none;
     border-radius: 2px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-cta:hover {
     background-color: #555;
-    color: #ddd;
     transform: translateX(5px);
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 footer {
