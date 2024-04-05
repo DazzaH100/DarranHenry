@@ -1,8 +1,14 @@
 /* style.css */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
+}
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Ensures the body doesn't extend beyond the viewport */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 .hero {
@@ -14,7 +20,7 @@ body, html {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Ensures no internal overflow */
 }
 
 #particles-js {
@@ -31,6 +37,7 @@ body, html {
     max-width: 960px;
     margin: 0 auto;
     z-index: 10;
+    padding: 0 15px; /* Add padding to ensure text doesn't touch the sides */
 }
 
 .hero-content h1 {
@@ -80,5 +87,3 @@ footer {
     width: 100%;
     color: #fff;
 }
-
-/* Responsive and additional styles can be added as needed */
