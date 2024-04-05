@@ -23,6 +23,58 @@ body, html {
     overflow: hidden; /* Ensures no internal overflow */
 }
 
+#navbar {
+    /* Sticky navbar styles */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    /* Other styling for navbar */
+}
+
+#about {
+    /* Styles for about section */
+    background: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.features {
+    /* Layout for feature cards using Flexbox or Grid */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    /* Individual feature card styles */
+    flex-basis: 20%;
+    margin: 10px;
+    text-align: center;
+    /* Rest of your styling */
+}
+
+.skills-container {
+    /* Container for profile and skills bars */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile {
+    /* Profile image and bio */
+    flex-basis: 40%;
+    /* Styling for the profile section */
+}
+
+.skills {
+    /* Container for skill bars */
+    flex-basis: 50%;
+    /* Styling for skill bars */
+}
+
+/* Additional responsive and specific styles as needed */
+
 #particles-js {
     position: absolute;
     width: 100%;
