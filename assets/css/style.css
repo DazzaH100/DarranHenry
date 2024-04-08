@@ -17,8 +17,11 @@ body, html {
 }
 
 body{
+    background: #080808;
+    color: #fff;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* stack the content vertically *?
+    min-height: 100vh; /* Use viewport height to ensure minimum height */
 }
 
 main{
