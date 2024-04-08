@@ -1,194 +1,95 @@
-/* style.css */
-* {
+/* Reset and base styles */
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
-}
-
-html {
-    scroll-behavior: smooth;
-  }
-
-body, html {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%; /* Ensures the body doesn't extend beyond the viewport */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    background: #080808;
-    color: #fff;
-}
-
-#header{
-    width: 100%;
-    height: 100vh;
-}
-
-.container{
-    padding: 10px 10%;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-body{
-    display: flex;
-    flex-direction: column; /* stack the content vertically *?
-    min-height: 100vh; /* Use viewport height to ensure minimum height */
-}
-
-main{
-    flex: 1 0 auto; /* Flex-grow, flex-shrink, flex-basis */
-    /* Your styles for main content */
-}
-
-footer {
-    flex-shrink: 0; /* Prevents the footer from shrinking */
-    /* Your styles for footer */
+    overflow-x: hidden;
   }
-
-.hero {
-    background: linear-gradient(45deg, #000000, #434343, #236B8E, #0F9B8E);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    height: 100vh;
+  body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden; /* Ensures no internal overflow */
-}
-
-#navbar {
-    /* Sticky navbar styles */
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-    /* Other styling for navbar */
-}
-
-#about {
-    /* Styles for about section */
-    background: #f5f5f5;
-    padding: 50px 20px;
-}
-
-.features {
-    /* Layout for feature cards using Flexbox or Grid */
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature {
-    /* Individual feature card styles */
-    flex-basis: 20%;
-    margin: 10px;
-    text-align: center;
-    /* Rest of your styling */
-}
-
-.skills-container {
-    /* Container for profile and skills bars */
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.profile {
-    /* Profile image and bio */
-    flex-basis: 40%;
-    /* Styling for the profile section */
-}
-
-.skills {
-    /* Container for skill bars */
-    flex-basis: 50%;
-    /* Styling for skill bars */
-}
-
-/* Additional responsive and specific styles as needed */
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Ensure it's behind your content */
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  ul {
+    list-style: none;
   }
   
-
-.hero-content {
-    position: relative;
-    color: #ffffff;
-    text-align: left;
-    max-width: 960px;
-    margin: 0 auto;
-    z-index: 10;
-    padding: 0 15px; /* Add padding to ensure text doesn't touch the sides */
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: normal;
-    line-height: 1.2;
-}
-
-.highlighted {
-    color: #E60073;
-    font-weight: bold;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-
-.btn-cta {
-    padding: 10px 25px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    border-radius: 2px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    cursor: pointer;
-}
-
-.arrow {
-    display: inline-block;
-    transition: transform 0.3s; /* Smooth transition for the transform property */
-  }
-
-  .btn-cta:hover .arrow {
-    transform: rotate(90deg); /* Rotates the arrow to point down */
-  }
-
-.btn-cta:hover {
-    background-color: #555;
-    color: #ddd;
-    transform: translateX(5px);
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
+  /* Particles.js background */
+  #particles-js {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    color: #fff;
-}
-
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Navigation styles */
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+  .navbar li {
+    padding: 10px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    text-align: center;
+    position: relative;
+    padding: 100px 0; /* Adjust as needed for your design */
+  }
+  .highlighted {
+    color: #e60073; /* Your highlight color */
+  }
+  
+  /* Button styles */
+  .btn-cta {
+    /* Your button styles */
+  }
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .btn-cta:hover .arrow {
+    transform: rotate(90deg);
+  }
+  
+  /* About header with underline */
+  .about-header h2 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  .about-header h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease;
+  }
+  .about-header h2:hover::after {
+    width: 100%;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
