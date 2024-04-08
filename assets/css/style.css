@@ -76,14 +76,7 @@ footer {
     overflow: hidden; /* Ensures no internal overflow */
 }
 
-#navbar {
-    /* Sticky navbar styles */
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-    /* Other styling for navbar */
-}
+
 
 #about {
     /* Styles for about section */
