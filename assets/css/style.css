@@ -36,6 +36,18 @@ nav{
     flex-wrap: wrap;
 }
 
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+
 body{
     display: flex;
     flex-direction: column; /* stack the content vertically *?
