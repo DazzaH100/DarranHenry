@@ -136,6 +136,11 @@ footer {
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s; /* Smooth transition for the transform property */
+  }
+
 .btn-cta:hover {
     background-color: #555;
     color: #ddd;
