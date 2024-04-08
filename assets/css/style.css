@@ -14,11 +14,11 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     width: 100%; /* Ensures the body doesn't extend beyond the viewport */
     overflow-x: hidden; /* Prevents horizontal scrolling */
+    background: #080808;
+    color: #fff;
 }
 
 body{
-    background: #080808;
-    color: #fff;
     display: flex;
     flex-direction: column; /* stack the content vertically *?
     min-height: 100vh; /* Use viewport height to ensure minimum height */
