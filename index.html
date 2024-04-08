@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darran Henry | Full-Stack Web Developer and UI/UX Designer</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0/particles.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0/particles.min.js"></script>
+    
+
 </head>
 <body>
-  <div id="particles-js"></div>
-  
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <section id="home" class="hero">
-    <h1>Hello, I'm <span class="highlighted">Darran Henry</span>.</h1>
-    <p>I'm a full-stack web developer and UI/UX Designer.</p>
-    <a href="#about" class="btn-cta">View my work <span class="arrow">→</span></a>
-  </section>
-  
-  <section id="about">
-    <div class="about-header">
-      <h2>About</h2>
-    </div>
-    <!-- About section content -->
-  </section>
-  
-  <!-- Other sections -->
-  
-  <footer>
-    © 2024 Darran Henry. All rights reserved.
-  </footer>
-  
-  <script src="app.js"></script>
+    <div id="particles-js"></div>
+    <!--particles background for home page-->
+    <main>
+        <!--hero section -->
+        <section id="home" class="hero">
+            <div id="header">
+                    <div id="container">
+                        <nav>
+                          <img src="image" class="logo">
+                           <ul>
+                             <li><a href="#">home</a></li>
+                             <li><a href="#">about</a></li>
+                             <li><a href="#">portfolio</a></li>
+                             <li><a href="#">contact</a></li>
+                           </ul>
+                        </nav>
+                 </div>
+              </div>
+            <div class="hero-content">
+                <!--content for the hero section-->
+                <h1>Hello, I'm <span class="highlighted">Darran Henry</span>.</h1>
+                <p>I'm a full-stack web developer and UI/UX Designer.</p>
+                <a href="about-section" class="btn-cta">View my work <span class="arrow">→</span></a>
+            </div>
+        </section>
+        <!--about section-->
+        <section id="about">
+            <h2>About</h2>
+            <div class="features">
+                <!-- Feature icons and descriptions here -->
+            </div>
+            <div class="skills-container">
+                <div class="profile">
+                    <!-- Profile picture and bio here -->
+                </div>
+                <div class="skills">
+                    <!-- Skills bars here -->
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="images">
+                <!-- Pictures of Work-->
+            </div>
+
+        </section>
+        <!-- Additional sections would go here -->
+    </main>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+      </script>
+
+<footer>
+    
+    <p>© 2024 Darran Henry. All rights reserved.</p>
+</footer>
+      
+    
 </body>
 </html>
