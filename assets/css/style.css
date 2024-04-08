@@ -1,72 +1,158 @@
-/* Reset some default styles */
-body, html, div, section, nav, h2 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+/* style.css */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
 }
 
 body, html {
     height: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Ensures the body doesn't extend beyond the viewport */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-/* Particle background */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto; /* Flex-grow, flex-shrink, flex-basis */
+    /* Your styles for main content */
+}
+
+footer {
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+    /* Your styles for footer */
+  }
+
+.hero {
+    background: linear-gradient(45deg, #000000, #434343, #236B8E, #0F9B8E);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Ensures no internal overflow */
+}
+
+#navbar {
+    /* Sticky navbar styles */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    /* Other styling for navbar */
+}
+
+#about {
+    /* Styles for about section */
+    background: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.features {
+    /* Layout for feature cards using Flexbox or Grid */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    /* Individual feature card styles */
+    flex-basis: 20%;
+    margin: 10px;
+    text-align: center;
+    /* Rest of your styling */
+}
+
+.skills-container {
+    /* Container for profile and skills bars */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile {
+    /* Profile image and bio */
+    flex-basis: 40%;
+    /* Styling for the profile section */
+}
+
+.skills {
+    /* Container for skill bars */
+    flex-basis: 50%;
+    /* Styling for skill bars */
+}
+
+/* Additional responsive and specific styles as needed */
+
 #particles-js {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-}
+    z-index: 1; /* Ensure it's behind your content */
+  }
+  
 
-/* Navigation Bar */
-nav {
-    /* Style your navbar */
-}
-
-/* Hero Section */
-#home {
-    height: 100vh;
-    /* Style your hero section */
-}
-
-/* About Section Header */
-.about-header {
-    text-align: center;
+.hero-content {
     position: relative;
-    padding: 1em 0;
+    color: #ffffff;
+    text-align: left;
+    max-width: 960px;
+    margin: 0 auto;
+    z-index: 10;
+    padding: 0 15px; /* Add padding to ensure text doesn't touch the sides */
 }
 
-.about-header h2 {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1.2;
 }
 
-.about-header h2::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background: #000;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: width 0.5s ease;
+.highlighted {
+    color: #E60073;
+    font-weight: bold;
 }
 
-.about-header h2:hover::after {
-    width: 100%;
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
-/* About Section */
-#about {
-    /* Style your about section */
+.btn-cta {
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-/* Footer */
+.btn-cta:hover {
+    background-color: #555;
+    color: #ddd;
+    transform: translateX(5px);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 footer {
-    /* Style your footer */
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
 }
