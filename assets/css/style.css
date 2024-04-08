@@ -1,5 +1,7 @@
 /* style.css */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
 }
 
@@ -65,14 +67,6 @@ footer {
     overflow: hidden; /* Ensures no internal overflow */
 }
 
-#navbar {
-    /* Sticky navbar styles */
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-    /* Other styling for navbar */
-}
 
 #about {
     /* Styles for about section */
