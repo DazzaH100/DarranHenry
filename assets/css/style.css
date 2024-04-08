@@ -141,6 +141,10 @@ footer {
     transition: transform 0.3s; /* Smooth transition for the transform property */
   }
 
+  .btn-cta:hover .arrow {
+    transform: rotate(90deg); /* Rotates the arrow to point down */
+  }
+
 .btn-cta:hover {
     background-color: #555;
     color: #ddd;
