@@ -134,6 +134,9 @@ footer {
     border: none;
     border-radius: 2px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* Your button styles */
+    display: inline-block; /* Or flex, depending on your design */
+  
 }
 
 .arrow {
