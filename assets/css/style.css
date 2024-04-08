@@ -147,7 +147,7 @@ footer {
   }
 
 .btn-cta:hover {
-    background-color: #555;
+    background-color: #E60073;
     color: #ddd;
     transform: translateX(5px);
 }
